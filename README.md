@@ -1,36 +1,50 @@
 # EnviroLab 🌌🌡️
 
 ## Overview 🌐
-EnviroLab is an Arduino-based project designed to simulate an environmental monitoring system like those used in space exploration. It uses temperature and humidity sensors to collect data, mirroring the functionality of monitoring equipment on space stations or satellites. This project aims to demonstrate how space technology can be replicated and studied using accessible, everyday electronics.
+EnviroLab is an Arduino-based environmental monitoring system designed to simulate conditions similar to those on a space station. It uses sensors to collect data on temperature, air humidity, and soil moisture.
 
 ## Features 🚀
-- **Temperature Monitoring**: Using a temperature sensor to record ambient temperature.
-- **Humidity Sensing**: Employing a humidity sensor to track environmental moisture levels.
-- **Data Transmission**: Utilizing an Ethernet shield for data transmission to a computer for analysis.
-- **Real-Time Analysis**: Implementing software for real-time data capture and analysis.
+- **Temperature Monitoring**: Record ambient temperature using a DHT sensor.
+- **Humidity Sensing**: Track environmental moisture levels with the same DHT sensor.
+- **Soil Moisture Analysis**: Determine soil conditions using a separate moisture sensor.
+- **Data Transmission**: Utilize an Ethernet shield to transmit data for further analysis.
 
 ## Hardware Requirements 🛠️
 - Arduino Board
 - Grove Shield
 - Ethernet Shield
-- Temperature Sensor
-- Humidity Sensor
+- DHT22 Temperature and Humidity Sensor
+- Soil Moisture Sensor
 
 ## Software Requirements 💻
-- Arduino IDE for programming the Arduino
+- Arduino IDE
+- DHT sensor library for Arduino
+
+## DHT Sensor Library Installation 📚
+To install the DHT sensor library, follow these steps:
+1. Open the Arduino IDE.
+2. Go to `Sketch` > `Include Library` > `Manage Libraries...`
+3. In the Library Manager, enter `DHT sensor library` in the search box.
+4. Find the DHT sensor library by Adafruit and click `Install`.
 
 ## Setup and Installation 📋
-1. **Hardware Assembly**: Connect the sensors and Ethernet shield to the Arduino board following the standard connections.
-2. **Software Setup**: Program the Arduino with the provided code to read and transmit sensor data.
+1. Connect the DHT sensor and the soil moisture sensor to the Arduino according to their respective documentation.
+2. Install the DHT sensor library using the instructions above.
+3. Upload the provided Arduino sketch to the board.
+
+## Usage 💡
+Once the system is set up and the code is uploaded:
+1. Open the Arduino IDE Serial Monitor to view the sensor readings.
+2. Observe the temperature, humidity, and soil moisture data as it updates.
 
 ## Contributing 🤝
-Contributions, ideas, and feedback are welcome! For major changes, please open an issue first to discuss what you would like to change.
+Feel free to fork this repository, contribute to the code, or provide feedback on potential improvements. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License 📄
-[MIT](https://opensource.org/licenses/MIT)
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgements 🌟
-Special thanks to all contributors and mentors who have provided guidance and support throughout the development of this project.
+Special thanks to the community and to all contributors who have helped with advice, contributions, and support.
 
 ---
-🚀 *EnviroLab - Bringing Space Technology Down to Earth!* 🚀
+🚀 *EnviroLab - Monitoring our world, one sensor at a time.* 🚀
