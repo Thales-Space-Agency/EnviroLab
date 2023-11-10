@@ -35,7 +35,8 @@ To install the DHT sensor library, follow these steps:
 ## Usage 💡
 Once the system is set up and the code is uploaded:
 1. Open the Arduino IDE Serial Monitor to view the sensor readings.
-2. Observe the temperature, humidity, and soil moisture data as it updates.
+2. If you use the DHT22 Temperature and Humidity Sensor you need to uncomment the line 37 and from 66 to 68.
+3. Observe the temperature, humidity, and soil moisture data as it updates.
 
 ## Contributing 🤝
 Feel free to fork this repository, contribute to the code, or provide feedback on potential improvements. For major changes, please open an issue first to discuss what you would like to change.
